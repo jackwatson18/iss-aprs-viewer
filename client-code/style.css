@@ -1,0 +1,122 @@
+html, body {
+    margin:0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebebeb;
+}
+
+.redshadow { 
+    text-shadow: 3px 3px #FF0000;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+
+
+#navbar li {
+    display: inline;
+    padding: 1rem;
+    text-align: center;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+#navbar li:hover {
+    font-weight: bold;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    transition-duration: 0.25s;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(10px, 0.5fr) repeat(4, 1fr) minmax(10px, 0.5fr);
+    grid-template-rows: repeat(5, minmax(2em, auto));
+}
+
+#main {
+    grid-column: 2 / -2;
+    grid-row: 4 / 5;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border: #afafaf 1px solid;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#header {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 0.5em;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+
+#navbar {
+    background-color: #111111;
+    color: #FFFFFF;
+    grid-column: 1 / -1;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+table {
+    width: 100%;
+    border: #000000 1px solid;
+}
+
+th {
+    text-align: center;
+}
+
+
+th {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+
+hr {
+    margin-bottom: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #d5d5d5;
+}
+
+.centeredtext {
+    text-align: center;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
